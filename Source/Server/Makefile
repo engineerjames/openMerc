@@ -1,6 +1,6 @@
 all: server cgi/info.cgi respawn password cgi/acct.cgi 
 
-CC=gcc
+CC=gcc -m32
 DEBUG=-g
 CFLAGS=-Wall -Wshadow -Winline -Wno-pointer-sign -O3 $(DEBUG) -march=pentium4 -fno-strict-aliasing
 LDFLAGS=-O $(DEBUG)
